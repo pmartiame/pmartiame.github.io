@@ -1,0 +1,75 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+header {
+  background-color: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+nav a {
+  color: #cce3ff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #66b3ff;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.intro p, section p {
+  line-height: 1.6;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin: 8px 0;
+}
+
+footer {
+  background-color: #0d1b2a;
+  color: #cce3ff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .profile-pic {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
