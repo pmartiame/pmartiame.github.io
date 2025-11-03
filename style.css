@@ -44,6 +44,17 @@ main {
   margin: 0 auto;
 }
 
+/* === BANNER IMAGE === */
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* === INTRO SECTION === */
 .intro {
   display: flex;
@@ -59,7 +70,7 @@ main {
 /* === PROFILE IMAGE === */
 .profile-pic {
   display: block;
-  max-width: 250px; /* keeps it a nice size */
+  max-width: 250px;
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -131,5 +142,9 @@ footer {
 
   .profile-pic {
     margin: 0 auto 20px;
+  }
+  
+  .banner-img {
+    margin-bottom: 20px;
   }
 }
