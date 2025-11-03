@@ -1,51 +1,95 @@
+/* === GENERAL STYLES === */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background-color: #f4f6f8;
+  padding: 0;
+  background-color: #f9f9f9;
   color: #222;
+  line-height: 1.6;
 }
 
+/* === HEADER === */
 header {
-  background-color: #0d1b2a;
+  background-color: #00274d;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
-  color: #cce3ff;
-  margin: 0 1rem;
+  color: white;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #66b3ff;
+  color: #ffcc00;
 }
 
+/* === MAIN CONTENT === */
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* === INTRO SECTION === */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* === PROFILE IMAGE === */
 .profile-pic {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.banner-img {
+  display: block;
+  max-width: 250px; /* keeps it a nice size */
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.intro p, section p {
-  line-height: 1.6;
+/* === TEXT STYLING === */
+.intro h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #00274d;
+}
+
+.intro p {
+  margin-bottom: 15px;
+}
+
+/* === CONTACT SECTION === */
+.contact {
+  margin-top: 40px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+  color: #00274d;
+  margin-top: 0;
 }
 
 .contact ul {
@@ -54,22 +98,38 @@ main {
 }
 
 .contact li {
-  margin: 8px 0;
+  margin: 10px 0;
+  font-size: 1rem;
 }
 
+.contact a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
 footer {
-  background-color: #0d1b2a;
-  color: #cce3ff;
+  background-color: #00274d;
+  color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 15px;
+  margin-top: 50px;
   font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
 }
 
+/* === RESPONSIVE === */
 @media (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .profile-pic {
-    float: none;
-    display: block;
     margin: 0 auto 20px;
   }
 }
